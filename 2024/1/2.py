@@ -1,4 +1,4 @@
-with open('2024_1/1.txt') as f:
+with open('2024/1/1.txt') as f:
     
     list3 = []
     list1 = []
@@ -10,8 +10,8 @@ with open('2024_1/1.txt') as f:
         list2.append(int(temp[1]))
 
     for i in range(len(list1)):
-        list3.append(abs(min(list1)-min(list2)))
-        list1.remove(min(list1))
-        list2.remove(min(list2))
+        list3.append(list1[i]*list2.count(list1[i]))
+        # list1.remove(min(list1))
+        # list2.remove(min(list2))
     print(sum(list3))
         
